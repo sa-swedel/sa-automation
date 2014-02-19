@@ -4,46 +4,46 @@
 # user roles
 
 # CRC
-declare -a sctest1=(sctest1 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 scone@studyspot.com SC ONE 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
-declare -a sctest2=(sctest2 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 sctwo@studyspot.com SC TWO 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
-declare -a sctest3=(sctest3 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 sc123@studyspot.com SC 123 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
-declare -a sctest4=(sctest4 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 sc2and3@studyspot.com SC 23 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
+declare -a scsite1=(scsite1 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 scone@studyspot.com SC ONE 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
+declare -a scsite2=(scsite2 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 sctwo@studyspot.com SC TWO 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
+declare -a scsite123=(scsite123 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 sc123@studyspot.com SC 123 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
+declare -a scsite23=(scsite23 928a36be170e2ff2821953535755abfe c48e609aff1d7581a0e7db90a4e42a12 sc2and3@studyspot.com SC 23 1 1 "2013-10-17 17:52:33" "2014-01-21 12:17:22" "2013-10-18 13:53:50" 0 GMT 0.0 0)
 
 # INV
-declare -a invtst1=(itest1 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb ione@studyspot.com INV ONE 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
-declare -a invtst2=(itest2 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb itwo@studyspot.com INV TWO 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
-declare -a invtst3=(itest3 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb i123@studyspot.com INV 123 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
-declare -a invtst4=(itest4 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb i2and3@studyspot.com INV 23 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
+declare -a invsite1=(itest1 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb ione@studyspot.com INV ONE 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
+declare -a invsite2=(itest2 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb itwo@studyspot.com INV TWO 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
+declare -a invsite123=(itest3 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb i123@studyspot.com INV 123 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
+declare -a invsite23=(itest4 4fa36550db39bcbd10cc18323046cc1e d3e05456a528820e931ff664692be7cb i2and3@studyspot.com INV 23 1 1 "2013-10-18 13:57:08" "2013-10-18 13:57:08" "2013-10-18 13:57:08" 0 America/Denver -6.0 0)
 
 # DM
-declare -a dmtest1=(dmtest1 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dmone@studyspot.com DM ONE 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
-declare -a dmtest2=(dmtest2 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dmtwo@studyspot.com DM TWO 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
-declare -a dmtest3=(dmtest3 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dm123@studyspot.com DM 123 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
-declare -a dmtest4=(dmtest4 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dm2and3@studyspot.com DM 23 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
+declare -a dmsite1=(dmsite1 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dmone@studyspot.com DM ONE 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
+declare -a dmsite2=(dmsite2 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dmtwo@studyspot.com DM TWO 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
+declare -a dmsite123=(dmsite123 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dm123@studyspot.com DM 123 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
+declare -a dmsite23=(dmsite23 ad3db225069f7781b3b4f9c4a9ac5b18 704e06f50cf31f89c5d8925c91d6a9eb dm2and3@studyspot.com DM 23 1 1 "2013-10-18 15:10:59" "2013-10-18 15:10:59" "2013-10-18 15:10:59" 0 America/Denver -6.0 0)
 
 # MON
-declare -a montst1=(mtest1 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad mone@studyspot.com MON ONE 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
-declare -a montst2=(mtest2 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad mtwo@studyspot.com MON TWO 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
-declare -a montst3=(mtest3 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad m123@studyspot.com MON 123 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
-declare -a montst4=(mtest4 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad m2and3@studyspot.com MON 23 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
+declare -a monsite1=(mtest1 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad mone@studyspot.com MON ONE 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
+declare -a monsite2=(mtest2 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad mtwo@studyspot.com MON TWO 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
+declare -a monsite123=(mtest3 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad m123@studyspot.com MON 123 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
+declare -a monsite23=(mtest4 6f80f1f624edbb358ac2294739f02165 635fd9951cc5ae655f16b2bb0563fcad m2and3@studyspot.com MON 23 1 1 "2013-10-18 15:14:29" "2013-10-18 15:14:29" "2013-10-18 15:14:29" 0 America/Denver -6.0 0)
 
 # SPON
-declare -a spntst1=(stest1 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 sone@studyspot.com SPON ONE 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
-declare -a spntst2=(stest2 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 stwo@studyspot.com SPON TWO 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
-declare -a spntst3=(stest3 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 s123@studyspot.com SPON 123 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
-declare -a spntst4=(stest4 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 s2and3@studyspot.com SPON 23 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
+declare -a sponsite1=(stest1 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 sone@studyspot.com SPON ONE 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
+declare -a sponsite2=(stest2 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 stwo@studyspot.com SPON TWO 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
+declare -a sponsite123=(stest3 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 s123@studyspot.com SPON 123 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
+declare -a sponsite23=(stest4 ff9d86cea1b021e9409657eb94c91860 8c4f98705d08c92f163ad3da7ece9f77 s2and3@studyspot.com SPON 23 1 1 "2013-10-18 15:17:41" "2013-10-18 15:17:41" "2013-10-18 15:17:41" 0 America/Denver -6.0 0)
 
 # RO
-declare -a rontst1=(rotest1 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 roone@studyspot.com RO ONE 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
-declare -a rontst2=(rotest2 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 rotwo@studyspot.com RO TWO 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
-declare -a rontst3=(rotest3 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 ro123@studyspot.com RO 123 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
-declare -a rontst4=(rotest4 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 ro2and3@studyspot.com RO 23 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
+declare -a rosite1=(rotest1 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 roone@studyspot.com RO ONE 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
+declare -a rosite2=(rotest2 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 rotwo@studyspot.com RO TWO 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
+declare -a rosite123=(rotest3 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 ro123@studyspot.com RO 123 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
+declare -a rosite23=(rotest4 4afec5ea5fe0e96b86cf5c2198d8a619 7ccfb62083133d9d1abc269d3805dea1 ro2and3@studyspot.com RO 23 1 1 "2013-10-18 15:20:44" "2013-10-18 15:20:44" "2013-10-18 15:20:44" 0 America/Denver -6.0 0)
 
 # perm roles/misc
 
 declare -a prmroles=("Study Coordinator" Investigator "Data Manager" Monitor Sponsor "Read Only")
 declare -a prms=(sctest invtst dmtest montst spntst rontst)
-declare -a unames=(sctest1 sctest2 sctest3 sctest4 invtst1 invtst2 invtst3 invtst4 dmtest1 dmtest2 dmtest3 dmtest4 montst1 montst2 montst3 montst4 spntst1 spntst2 spntst3 spntst4 rontst1 rontst2 rontst3 rontst4)
+declare -a unames=(scsite1 scsite2 scsite123 scsite23 invsite1 invsite2 invsite123 invsite23 dmsite1 dmsite2 dmsite123 dmsite23 monsite1 monsite2 monsite123 monsite23 sponsite1 sponsite2 sponsite123 sponsite23 rosite1 rosite2 rosite123 rosite23)
 declare -a colhdgs=(username password salt email first_name last_name email_verified active created modified last_password_change_date failed_login_attempts time_zone time_zone_offset password_reset_flag)
 
 # first insert the usernames
@@ -78,9 +78,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${sctest1[$x]}
+	d=${scsite1[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='sctest1';"
+	query="UPDATE users set "$h"='"$d"' where username='scsite1';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -91,9 +91,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${sctest2[$x]}
+	d=${scsite2[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='sctest2';"
+	query="UPDATE users set "$h"='"$d"' where username='scsite2';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -104,9 +104,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${sctest3[$x]}
+	d=${scsite123[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='sctest3';"
+	query="UPDATE users set "$h"='"$d"' where username='scsite123';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -118,9 +118,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${sctest4[$x]}
+	d=${scsite23[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='sctest4';"
+	query="UPDATE users set "$h"='"$d"' where username='scsite23';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -135,9 +135,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${invtst1[$x]}
+	d=${invsite1[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='invtst1';"
+	query="UPDATE users set "$h"='"$d"' where username='invsite1';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -148,9 +148,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${invtst2[$x]}
+	d=${invsite2[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='invtst2';"
+	query="UPDATE users set "$h"='"$d"' where username='invsite2';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -161,9 +161,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${invtst3[$x]}
+	d=${invsite123[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='invtst3';"
+	query="UPDATE users set "$h"='"$d"' where username='invsite123';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -175,9 +175,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${invtst4[$x]}
+	d=${invsite23[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='invtst4';"
+	query="UPDATE users set "$h"='"$d"' where username='invsite23';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -192,9 +192,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${dmtest1[$x]}
+	d=${dmsite1[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='dmtest1';"
+	query="UPDATE users set "$h"='"$d"' where username='dmsite1';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -205,9 +205,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${dmtest2[$x]}
+	d=${dmsite2[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='dmtest2';"
+	query="UPDATE users set "$h"='"$d"' where username='dmsite2';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -218,9 +218,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${dmtest3[$x]}
+	d=${dmsite123[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='dmtest3';"
+	query="UPDATE users set "$h"='"$d"' where username='dmsite123';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -232,9 +232,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${dmtest4[$x]}
+	d=${dmsite23[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='dmtest4';"
+	query="UPDATE users set "$h"='"$d"' where username='dmsite23';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -250,9 +250,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${montst1[$x]}
+	d=${monsite1[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='montst1';"
+	query="UPDATE users set "$h"='"$d"' where username='monsite1';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -263,9 +263,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${montst2[$x]}
+	d=${monsite2[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='montst2';"
+	query="UPDATE users set "$h"='"$d"' where username='monsite2';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -276,9 +276,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${montst3[$x]}
+	d=${monsite123[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='montst3';"
+	query="UPDATE users set "$h"='"$d"' where username='monsite123';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -290,9 +290,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${montst4[$x]}
+	d=${monsite23[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='montst4';"
+	query="UPDATE users set "$h"='"$d"' where username='monsite23';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -307,9 +307,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${spntst1[$x]}
+	d=${sponsite1[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='spntst1';"
+	query="UPDATE users set "$h"='"$d"' where username='sponsite1';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -320,9 +320,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${spntst2[$x]}
+	d=${sponsite2[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='spntst2';"
+	query="UPDATE users set "$h"='"$d"' where username='sponsite2';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -333,9 +333,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${spntst3[$x]}
+	d=${sponsite123[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='spntst3';"
+	query="UPDATE users set "$h"='"$d"' where username='sponsite123';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -347,9 +347,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${spntst4[$x]}
+	d=${sponsite23[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='spntst4';"
+	query="UPDATE users set "$h"='"$d"' where username='sponsite23';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -364,9 +364,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${rontst1[$x]}
+	d=${rosite1[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='rontst1';"
+	query="UPDATE users set "$h"='"$d"' where username='rosite1';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -377,9 +377,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${rontst2[$x]}
+	d=${rosite2[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='rontst2';"
+	query="UPDATE users set "$h"='"$d"' where username='rosite2';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -390,9 +390,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${rontst3[$x]}
+	d=${rosite123[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='rontst3';"
+	query="UPDATE users set "$h"='"$d"' where username='rosite123';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -404,9 +404,9 @@ x=1
 while [ $x -lt 15 ]
 do
 	h=${colhdgs[$x]}
-	d=${rontst4[$x]}
+	d=${rosite23[$x]}
 	#echo $d
-	query="UPDATE users set "$h"='"$d"' where username='rontst4';"
+	query="UPDATE users set "$h"='"$d"' where username='rosite23';"
 	mysql -uroot -ps\@aFe=u\$t4 -D spotv1 -e"$query";
 	#echo $query
 	x=`expr $x + 1`
@@ -423,10 +423,10 @@ echo 'Study Coordinator ...'
 
 # get user IDs for accounts
 
-idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sctest1'")
-idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sctest2'")
-idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sctest3'")
-idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sctest4'")
+idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='scsite1'")
+idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='scsite2'")
+idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='scsite123'")
+idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='scsite23'")
 
 # now get id numbers for permission levels
 
@@ -475,10 +475,10 @@ echo 'Investigator ...'
 
 # get user IDs for accounts
 
-idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invtst1'")
-idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invtst2'")
-idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invtst3'")
-idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invtst4'")
+idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invsite1'")
+idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invsite2'")
+idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invsite123'")
+idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='invsite23'")
 
 # now get id numbers for permission levels
 
@@ -527,10 +527,10 @@ echo 'Data Manager ...'
 
 # get user IDs for accounts
 
-idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmtest1'")
-idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmtest2'")
-idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmtest3'")
-idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmtest4'")
+idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmsite1'")
+idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmsite2'")
+idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmsite123'")
+idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='dmsite23'")
 
 # now get id numbers for permission levels
 
@@ -579,10 +579,10 @@ echo 'Monitor ...'
 
 # get user IDs for accounts
 
-idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='montst1'")
-idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='montst2'")
-idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='montst3'")
-idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='montst4'")
+idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='monsite1'")
+idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='monsite2'")
+idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='monsite123'")
+idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='monsite23'")
 
 # now get id numbers for permission levels
 
@@ -631,10 +631,10 @@ echo 'Sponsor ...'
 
 # get user IDs for accounts
 
-idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='spntst1'")
-idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='spntst2'")
-idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='spntst3'")
-idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='spntst4'")
+idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sponsite1'")
+idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sponsite2'")
+idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sponsite123'")
+idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='sponsite23'")
 
 # now get id numbers for permission levels
 
@@ -683,10 +683,10 @@ echo 'Read Only ...'
 
 # get user IDs for accounts
 
-idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rontst1'")
-idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rontst2'")
-idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rontst3'")
-idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rontst4'")
+idnum=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rosite1'")
+idnum2=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rosite2'")
+idnum3=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rosite123'")
+idnum4=$(mysql -uroot -ps\@aFe=u\$t4 -D spotv1 --disable-column-names -se "SELECT id from users where username='rosite23'")
 
 # now get id numbers for permission levels
 
