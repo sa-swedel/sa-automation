@@ -85,7 +85,7 @@ sleep 3
 
 #b.link( :title => 'Show/Hide Navigation Menu' ).when_present.click
 
-utst = b.text.include? 'Hi, MON Tester'
+utst = b.text.include? 'Hi, Mon Site1,2,3'
 
 if ( utst == true )
 	salog( tst, "PASS" )
