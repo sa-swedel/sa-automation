@@ -329,9 +329,9 @@ b.link( :text => 'Sites' ).when_present.click
 sleep 3
 # make sure none of the sites are still shown (accordion has retracted)
 
-exone = b.text.include? '108-Site 108'
-extwo = b.text.include? '113-Site 113'
-exthr = b.text.include? '114-Site 114'
+exone = b.text.include? '101-Demo 108'
+extwo = b.text.include? '102-Demo 102'
+exthr = b.text.include? '103-Demo 103'
 
 test_count +=1
 if (exone == false && extwo == false && exthr == false)
@@ -350,9 +350,9 @@ b.link( :text => 'Sites' ).when_present.click
 sleep 3
 # make sure the sites are shown (accordion has expanded)
 
-exone = b.text.include? '108-Site 108'
-extwo = b.text.include? '113-Site 113'
-exthr = b.text.include? '114-Site 114'
+exone = b.text.include? '101-Demo 108'
+extwo = b.text.include? '102-Demo 102'
+exthr = b.text.include? '103-Demo 103'
 test_count +=1
 if (exone == true && extwo == true && exthr == true)
 	salog( tst, "PASS" )
@@ -371,8 +371,8 @@ salog( sep, "LOG" )
 
 tst = '4.1: Open subject from left side menu, load form, and verify'
 
-b.link( :text => '108-Site 108' ).when_present.click
-b.link( :text => '108-999' ).when_present.click
+b.link( :text => '101-Demo 101' ).when_present.click
+b.link( :text => '101-999' ).when_present.click
 
 b.element( :css => '#ui-accordion-accordion-header-0 > a:nth-child(2)' ).when_present.click
 
@@ -385,7 +385,7 @@ sleep 3 # wait for form to load
 # DEBUG: getting bg color from queried question
 # puts b.div( :id => 'RFICSTAT' ).style 'background-color'
 
-idex = b.text.include?( '108-999' )
+idex = b.text.include?( '101-999' )
 frmex = b.text.include?( 'Informed Consent' )
 
 test_count +=1
@@ -709,7 +709,7 @@ tst = '7.1: click on ?/response to open query manager'
 #b.link( :text => '108-Site 108' ).when_present.click
 b.link( :text => 'Return to Subject' ).when_present.click
 sleep 3
-b.link( :text => '108-999' ).when_present.click
+b.link( :text => '101-999' ).when_present.click
 b.link( :text => 'View' ).when_present.click
 #b.link( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 #b.goto( site + "/INFCONSForms/view/1701?siteID=1" )
