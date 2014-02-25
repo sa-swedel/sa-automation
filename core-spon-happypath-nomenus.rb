@@ -22,7 +22,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 # vars
 
-login = 'stest'
+login = 'sponsite123'
 pw = '1qaz@WSX'
 #pw = '123456'
 site = 'http://54.212.41.237/'
@@ -85,7 +85,7 @@ sleep 3
 
 #b.link( :title => 'Show/Hide Navigation Menu' ).when_present.click
 
-utst = b.text.include? 'Hi, SPON Tester'
+utst = b.text.include? 'Hi, Spon Site1,2,3'
 
 if ( utst == true )
 	salog( tst, "PASS" )
