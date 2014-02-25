@@ -409,7 +409,7 @@ tst = '4.2: View sign-off/Investigator signature form (REMOVED 12/09/13)'
 salog( tst, "LOG" )
 salog( sep, "LOG" )
 
-# b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+# b.element( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 # sleep 2
 
 # verify subject id and form title are present
@@ -516,7 +516,7 @@ tst = '5.4: Dismiss Query Manager'
 sleep 2
 b.element( :text => 'Return to Queries' ).when_present.click
 sleep 2
-b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 sleep 2
 
 ex = b.text.include?( 'Query Manager' )
@@ -679,7 +679,7 @@ tst = '6.5: Dismiss Query Manager'
 #sleep 2
 #b.element( :text => 'Return to Queries' ).when_present.click
 sleep 2
-b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 sleep 2
 
 ex = b.text.include?( 'Query Manager' )
@@ -712,7 +712,7 @@ b.link( :text => 'Return to Subject' ).when_present.click
 sleep 3
 b.link( :text => '101-999' ).when_present.click
 b.link( :text => 'View' ).when_present.click
-#b.link( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+#b.link( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 #b.goto( site + "/INFCONSForms/view/1701?siteID=1" )
 b.element(:css, "div.to_click").click
 
@@ -783,7 +783,7 @@ tst = '7.4: Dismiss Query Manager'
 sleep 2
 b.button( :id => 'btnReturnToQueries' ).click
 sleep 2
-b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 sleep 2
 
 ex = b.text.include?( 'Query Manager' )
@@ -837,7 +837,7 @@ end
 # dismiss query manager (no test case needed at this point)
 
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 5
 
 # puts 'return to subject here'
@@ -855,7 +855,7 @@ salog( sep, "LOG" )
 tst = '8.1: click ?/response to open Query Manager'
 sleep 3
 
-#b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+#b.element( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 b.link( :text => 'View' ).when_present.click
 
 b.goto( site + "/INFCONSForms/view/1?siteID=1" )
@@ -926,7 +926,7 @@ end
 sleep 2
 b.button( :id => 'btnReturnToQueries' ).click
 sleep 2
-b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 sleep 2
 
 # 8.4: delete general comment query in Query Manager
@@ -970,7 +970,7 @@ sleep 2
 # dismiss query manager
 
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 5
 
 # puts 'return to subject here'
