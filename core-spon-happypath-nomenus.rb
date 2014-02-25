@@ -45,8 +45,8 @@ today = timedate.inspect.to_s
 
 # start up browser
 
-headless = Headless.new
-headless.start
+#headless = Headless.new
+#headless.start
 
 # uncomment the line corresponding to the browser against which you want to test (no arg = firefox)
 
@@ -439,9 +439,9 @@ salog( sep, "LOG" )
 tst = '5.1: click on ?/response to open query manager'
 
 #b.link( :text => '108-Site 108' ).when_present.click
-b.link( :text => '108-999' ).when_present.click
+b.link( :text => '101-999' ).when_present.click
 b.link( :text => 'View' ).when_present.click
-b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 b.element(:css, "div.to_click").click
 
 test_count +=1
@@ -551,7 +551,7 @@ salog( sep, "LOG" )
 
 tst = '6.1: Open QM & verify it opens to New Query tab'
 
-b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 b.element(:css, "div.to_click").click
 
 test_count +=1
@@ -799,7 +799,7 @@ end
 
 #tst = '7.5: Return to Query Manager, delete protocol deviation query'
 
-#b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+#b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 #b.element(:css, "div.to_click").click
 
 #b.link( :id, "ui-id-3" ).click
@@ -857,7 +857,7 @@ sleep 3
 #b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 b.link( :text => 'View' ).when_present.click
 
-b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 b.element(:css, "div.to_click").click
 
 test_count +=1
@@ -932,7 +932,7 @@ sleep 2
 
 #tst = '8.4: Delete general comment query'
 
-#b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+#b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 #b.element(:css, "div.to_click").click
 
 #b.link( :id, "ui-id-4" ).click
@@ -1051,4 +1051,4 @@ puts countstr
 
 
 b.close		
-headless.destroy
+#headless.destroy
