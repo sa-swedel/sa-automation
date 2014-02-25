@@ -174,8 +174,8 @@ salog( sep, "LOG" )
 		#b.link( :text => menus[loop] ).click
 		#sleep 10
 
-		#opq_tst = b.link( :text => 'Open Queries I have created' ).exists?
-		#clq_tst = b.link( :text => 'Closed Queries I have created' ).exists?
+		#opq_tst = b.link( :text => 'Open Queries I have Posted' ).exists?
+		#clq_tst = b.link( :text => 'Closed Queries I have Posted' ).exists?
 		#otq_tst = b.link( :text => 'Other Queries I did NOT create' ).exists?
 
 		# DEBUG
@@ -198,7 +198,7 @@ salog( sep, "LOG" )
 		#salog( tst, "LOG" )
 		
 
-		#b.link( :text => 'Open Queries I have created' ).when_present.click
+		#b.link( :text => 'Open Queries I have Posted' ).when_present.click
 		#opqctst = b.text.include?( 'You don\'t have any open queries that belong to you' )
 		#exist = b.link( :text => 'View' ).exists?
 
@@ -216,7 +216,7 @@ salog( sep, "LOG" )
 		#salog( tst, "LOG" )
 		
 
-		#b.link( :text => 'Closed Queries I have created' ).when_present.click
+		#b.link( :text => 'Closed Queries I have Posted' ).when_present.click
 		#clqctst = b.text.include?( 'You don\'t have any closed queries that belong to you' )
 		#exist = b.link( :text => 'View' ).exists?
 
@@ -572,7 +572,7 @@ sleep 2
 tst = '6.2: Verify correct columns exist'
 
 mnunms = Array.new
-mnunms = ['Query ID', 'Created', 'Responses', 'Visit Name', 'Form Element', 'Created By']
+mnunms = ['Query ID', 'Posted', 'Responses', 'Visit Name', 'Form Element', 'Posted By']
 
 
 #puts b.table( :id => 'openQuery' )[1][2].text
