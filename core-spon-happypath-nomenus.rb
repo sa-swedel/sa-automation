@@ -14,7 +14,7 @@
 require 'rubygems'
 require 'watir-webdriver'
 require './salog.rb'
-#require 'headless'
+require 'headless'
 
 # remove log file if it already exists, then create new one
 
@@ -45,8 +45,8 @@ today = timedate.inspect.to_s
 
 # start up browser
 
-#headless = Headless.new
-#headless.start
+headless = Headless.new
+headless.start
 
 # uncomment the line corresponding to the browser against which you want to test (no arg = firefox)
 
@@ -1052,4 +1052,4 @@ puts countstr
 
 
 b.close		
-#headless.destroy
+headless.destroy
