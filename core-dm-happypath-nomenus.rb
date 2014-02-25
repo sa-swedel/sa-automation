@@ -56,10 +56,12 @@ bver = b.execute_script("return navigator.userAgent")
 salog( sep, "LOG" )
 salog( 'DATA MANAGER ROLE: \'HAPPY PATH\' AUTOMATED TESTS', "LOG" )
 datestr = 'DATE RUN: ' + today.to_s
+tgtstr = 'TARGET: ' + site
 salog( datestr, "LOG" )
+salog( tgtstr, "LOG" )
 bstr = 'BROWSER: ' + bver
 salog( bstr, "LOG" )
-salog( sep, "LOG")
+salog( sep, "LOG" )
 
 
 
