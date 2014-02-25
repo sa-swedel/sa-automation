@@ -54,12 +54,15 @@ b = Watir::Browser.new
 # b = Watir::Browser.new :chrome
 # b = Watir::Browser.new :ie
 
+bver = b.execute_script("return navigator.userAgent")
 salog( sep, "LOG" )
 salog( 'SPONSOR ROLE: \'HAPPY PATH\' AUTOMATED TESTS', "LOG" )
 datestr = 'DATE RUN: ' + today.to_s
 tgtstr = 'TARGET: ' + site
 salog( datestr, "LOG" )
 salog( tgtstr, "LOG" )
+bstr = 'BROWSER: ' + bver
+salog( bstr, "LOG" )
 salog( sep, "LOG" )
 
 b.goto site
