@@ -25,7 +25,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 login = 'stest'
 pw = '1qaz@WSX'
 #pw = '123456'
-site = 'http://ux007-cl201.training.studyspotsa.com/'
+site = 'http://54.212.41.237/'
 test_count = 0
 fail_count = 0
 loop = 0
