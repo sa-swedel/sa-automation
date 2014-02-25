@@ -22,10 +22,10 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 # vars
 
-login = 'sctest'
+login = 'scsite123'
 pw = '1qaz@WSX'
 #pw = '123456'
-site = 'http://ux007-cl201.training.studyspotsa.com/'
+site = 'http://54.212.41.237/'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -84,7 +84,7 @@ sleep 3
 
 #b.link( :title => 'Show/Hide Navigation Menu' ).when_present.click
 
-utst = b.text.include? 'Hi, SC FULL'
+utst = b.text.include? 'Hi, SC Site1,2,3'
 
 if ( utst == true )
 	salog( tst, "PASS" )
@@ -325,9 +325,9 @@ b.link( :text => 'Sites' ).when_present.click
 sleep 3
 # make sure none of the sites are still shown (accordion has retracted)
 
-exone = b.text.include? '108-Site 101'
-extwo = b.text.include? '113-Site 102'
-exthr = b.text.include? '114-Site 103'
+exone = b.text.include? '101-Demo 101'
+extwo = b.text.include? '102-Demo 102'
+exthr = b.text.include? '103-Demo 103'
 
 test_count +=1
 if (exone == false && extwo == false && exthr == false)
@@ -346,9 +346,9 @@ b.link( :text => 'Sites' ).when_present.click
 sleep 3
 # make sure the sites are shown (accordion has expanded)
 
-exone = b.text.include? '108-Site 101'
-extwo = b.text.include? '113-Site 102'
-exthr = b.text.include? '114-Site 103'
+exone = b.text.include? '101-Demo 101'
+extwo = b.text.include? '102-Demo 102'
+exthr = b.text.include? '103-Demo 103'
 
 test_count +=1
 if (exone == true && extwo == true && exthr == true)
@@ -368,8 +368,8 @@ salog( sep, "LOG" )
 
 tst = '4.1: Open subject from left side menu, load form, and verify'
 
-b.link( :text => '108-Site 108' ).when_present.click
-b.link( :text => '108-999' ).when_present.click
+b.link( :text => '101-Demo 101' ).when_present.click
+b.link( :text => '101-999' ).when_present.click
 
 b.element( :css => '#ui-accordion-accordion-header-0 > a:nth-child(2)' ).when_present.click
 
@@ -382,7 +382,7 @@ sleep 3 # wait for form to load
 # DEBUG: getting bg color from queried question
 # puts b.div( :id => 'RFICSTAT' ).style 'background-color'
 
-idex = b.text.include?( '108-999' )
+idex = b.text.include?( '101-999' )
 frmex = b.text.include?( 'Informed Consent' )
 
 test_count +=1
@@ -405,7 +405,7 @@ tst = '4.2: View sign-off/Investigator signature form (REMOVED 12/09/13)'
 salog( tst, "LOG" )
 salog( sep, "LOG" )
 
-# b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+# b.element( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 # sleep 2
 
 # verify subject id and form title are present
@@ -436,9 +436,9 @@ salog( sep, "LOG" )
 tst = '5.1: click on ?/response to open query manager'
 
 #b.link( :text => '101-Demo 101' ).when_present.click
-b.link( :text => '108-999' ).when_present.click
+b.link( :text => '101-999' ).when_present.click
 b.link( :text => 'View' ).when_present.click
-b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 b.element(:css, "div.to_click").click
 
 test_count +=1
@@ -512,7 +512,7 @@ salog( sep, "LOG" )
 #sleep 2
 #b.element( :text => 'Return to Queries' ).when_present.click
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 2
 
 #ex = b.text.include?( 'Query Manager' )
@@ -548,7 +548,7 @@ salog( sep, "LOG" )
 
 tst = '6.1: Open QM & verify it opens to New Query tab'
 
-b.goto( site + "/INFCONSForms/view/2?siteID=1" )
+b.goto( site + "/INFCONSForms/view/1?siteID=1" )
 b.element(:css, "div.to_click").click
 
 test_count +=1
@@ -675,7 +675,7 @@ tst = '6.5: Dismiss Query Manager'
 #sleep 2
 #b.element( :text => 'Return to Queries' ).when_present.click
 sleep 2
-b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 sleep 2
 
 ex = b.text.include?( 'Query Manager' )
@@ -708,7 +708,7 @@ ex = b.text.include?( 'Query Manager' )
 #sleep 3
 #b.link( :text => '101-999' ).when_present.click
 #b.link( :text => 'View' ).when_present.click
-#b.link( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+#b.link( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 #b.goto( site + "/INFCONSForms/view/1701?siteID=1" )
 #b.element(:css, "div.to_click").click
 
@@ -779,7 +779,7 @@ ex = b.text.include?( 'Query Manager' )
 #sleep 2
 #b.button( :id => 'btnReturnToQueries' ).click
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 2
 
 #ex = b.text.include?( 'Query Manager' )
@@ -833,7 +833,7 @@ ex = b.text.include?( 'Query Manager' )
 # dismiss query manager (no test case needed at this point)
 
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 5
 
 # puts 'return to subject here'
@@ -851,7 +851,7 @@ salog( sep, "LOG" )
 #tst = '8.1: click ?/response to open Query Manager'
 #sleep 3
 
-#b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+#b.element( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 #b.link( :text => 'View' ).when_present.click
 
 #b.goto( site + "/INFCONSForms/view/2?siteID=1" )
@@ -922,7 +922,7 @@ salog( sep, "LOG" )
 #sleep 2
 #b.button( :id => 'btnReturnToQueries' ).click
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 2
 
 # 8.4: delete general comment query in Query Manager
@@ -966,7 +966,7 @@ salog( sep, "LOG" )
 # dismiss query manager
 
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 5
 
 # puts 'return to subject here'
@@ -1027,10 +1027,8 @@ salog( sep, "LOG" )
 
 tst = '10: LOG OUT'
 
-b.element( :xpath => '/html/body/div[2]/div[2]/div/div/div/a' ).when_present.click
+b.element( :link => 'Sign Out' ).when_present.click
 sleep 2
-b.element( :xpath => '/html/body/div[2]/div[2]/div/div/div/ul/li[4]/a' ).when_present.click
-sleep 5
 
 test_count +=1
 if b.text.include? 'You are successfully signed out'
