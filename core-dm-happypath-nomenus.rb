@@ -1027,12 +1027,8 @@ salog( sep, "LOG" )
 salog( '10: LOG OUT', "LOG" )
 salog( sep, "LOG" )
 
-tst = '10: LOG OUT'
-
-b.element( :xpath => '/html/body/div[2]/div[2]/div/div/div/a' ).when_present.click
+b.element( :link => 'Sign Out' ).when_present.click
 sleep 2
-b.element( :xpath => '/html/body/div[2]/div[2]/div/div/div/ul/li[4]/a' ).when_present.click
-sleep 5
 
 test_count +=1
 if b.text.include? 'You are successfully signed out'
