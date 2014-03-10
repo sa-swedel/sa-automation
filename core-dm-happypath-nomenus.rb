@@ -23,8 +23,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 login = 'dmsite123'
 pw = '1qaz@WSX'
-#pw = '123456'
-site = 'http://54.212.41.237/'
+site = 'http://develop.trialintel.com'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -44,7 +43,7 @@ today = timedate.inspect.to_s
 # start up browser
 
 headless = Headless.new
-headless.start
+#headless.start
 
 # uncomment the line corresponding to the browser against which you want to test (no arg = firefox)
 
@@ -412,7 +411,7 @@ salog( sep, "LOG" )
 
 # verify subject id and form title are present
 
-#idex = b.text.include?( '108-999' )
+#idex = b.text.include?( '101-999' )
 #titex = b.text.include?( 'Investigator Signature' )
 
 #test_count +=1
@@ -1048,4 +1047,4 @@ puts countstr
 
 
 b.close		
-headless.destroy
+#headless.destroy
