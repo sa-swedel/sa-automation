@@ -51,19 +51,6 @@ bstr = 'BROWSER: ' + bver
 salog( bstr, "LOG" )
 salog( sep, "LOG" )
 
-# program flow
-#
-# 1.) login
-# 2.) go to whatever page
-# 3.) take an action
-# 4.) wait until 5 min before end of timeout
-# 5.) check for presence of timeout nag
-# 6.) wait xx seconds until nag disappears, verify it's gone
-# 7.) wait until next timeout nag, verify presence
-# 8.) do the above until the last nag
-# 9.) after last nag, verify logout
-#
-
 # 1.) LOGIN
 
 b.goto site
