@@ -90,7 +90,7 @@ sleep 60
 
 # first timeout nag
 
-tst = '5 minute timeout dialog appears'
+tst = '1.) 5 minute timeout dialog appears'
 
 nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '5 minutes' )
@@ -103,7 +103,7 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '5 minute timeout dialog disappears'
+tst = '2.) 5 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
@@ -121,7 +121,7 @@ end
 
 # 4 minute dialog
 
-tst = '4 minute timeout dialog appears'
+tst = '3.) 4 minute timeout dialog appears'
 
 # wait for dialog to appear
 
@@ -138,7 +138,7 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '4 minute timeout dialog disappears'
+tst = '4.) 4 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
@@ -156,7 +156,7 @@ end
 
 # 3 minute dialog
 
-tst = '3 minute timeout dialog appears'
+tst = '5.) 3 minute timeout dialog appears'
 
 # wait for dialog to appear
 
@@ -173,7 +173,7 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '3 minute timeout dialog disappears'
+tst = '6.) 3 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
@@ -189,9 +189,9 @@ else
 	fail_count +=1
 end
 
-# 4 minute dialog
+# 2 minute dialog
 
-tst = '2 minute timeout dialog appears'
+tst = '7.) 2 minute timeout dialog appears'
 
 # wait for dialog to appear
 
@@ -208,7 +208,7 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '2 minute timeout dialog disappears'
+tst = '8.) 2 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
@@ -224,9 +224,9 @@ else
 	fail_count +=1
 end
 
-# 4 minute dialog
+# 1 minute dialog
 
-tst = '1 minute timeout dialog appears'
+tst = '9.) 1 minute timeout dialog appears'
 
 # wait for dialog to appear
 
@@ -243,7 +243,7 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '1 minute timeout dialog disappears'
+tst = '10.) 1 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
@@ -261,7 +261,7 @@ end
 
 # logged out
 
-tst = 'Logged out after timeout'
+tst = '11.) Logged out after timeout'
 
 # wait for logout
 
