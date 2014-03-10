@@ -24,8 +24,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 login = 'monsite123'
 pw = '1qaz@WSX'
-#pw = '123456'
-site = 'http://54.212.41.237/'
+site = 'http://develop.trialintel.com'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -414,7 +413,7 @@ salog( sep, "LOG" )
 
 # verify subject id and form title are present
 
-#idex = b.text.include?( '108-999' )
+#idex = b.text.include?( '101-999' )
 #titex = b.text.include?( 'Investigator Signature' )
 
 #test_count +=1
