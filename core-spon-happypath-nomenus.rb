@@ -24,8 +24,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 login = 'sponsite123'
 pw = '1qaz@WSX'
-#pw = '123456'
-site = 'http://54.212.41.237/'
+site = 'http://develop.trialintel.com'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -174,8 +173,8 @@ salog( sep, "LOG" )
 		#b.link( :text => menus[loop] ).click
 		#sleep 10
 
-		#opq_tst = b.link( :text => 'Open Queries I have created' ).exists?
-		#clq_tst = b.link( :text => 'Closed Queries I have created' ).exists?
+		#opq_tst = b.link( :text => 'Open Queries I have Posted' ).exists?
+		#clq_tst = b.link( :text => 'Closed Queries I have Posted' ).exists?
 		#otq_tst = b.link( :text => 'Other Queries I did NOT create' ).exists?
 
 		# DEBUG
@@ -198,7 +197,7 @@ salog( sep, "LOG" )
 		#salog( tst, "LOG" )
 		
 
-		#b.link( :text => 'Open Queries I have created' ).when_present.click
+		#b.link( :text => 'Open Queries I have Posted' ).when_present.click
 		#opqctst = b.text.include?( 'You don\'t have any open queries that belong to you' )
 		#exist = b.link( :text => 'View' ).exists?
 
@@ -216,7 +215,7 @@ salog( sep, "LOG" )
 		#salog( tst, "LOG" )
 		
 
-		#b.link( :text => 'Closed Queries I have created' ).when_present.click
+		#b.link( :text => 'Closed Queries I have Posted' ).when_present.click
 		#clqctst = b.text.include?( 'You don\'t have any closed queries that belong to you' )
 		#exist = b.link( :text => 'View' ).exists?
 
@@ -408,12 +407,12 @@ tst = '4.2: View sign-off/Investigator signature form (REMOVED 12/09/13)'
 salog( tst, "LOG" )
 salog( sep, "LOG" )
 
-# b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+# b.element( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 # sleep 2
 
 # verify subject id and form title are present
 
-#idex = b.text.include?( '108-999' )
+#idex = b.text.include?( '101-999' )
 #titex = b.text.include?( 'Investigator Signature' )
 
 #test_count +=1
@@ -438,7 +437,7 @@ salog( sep, "LOG" )
 
 tst = '5.1: click on ?/response to open query manager'
 
-#b.link( :text => '108-Site 108' ).when_present.click
+#b.link( :text => '101-Demo 101' ).when_present.click
 b.link( :text => '101-999' ).when_present.click
 b.link( :text => 'View' ).when_present.click
 b.goto( site + "/INFCONSForms/view/1?siteID=1" )
@@ -706,12 +705,12 @@ salog( sep, "LOG" )
 
 tst = '7.1: click on ?/response to open query manager'
 
-#b.link( :text => '108-Site 108' ).when_present.click
+#b.link( :text => '101-Demo 101' ).when_present.click
 b.link( :text => 'Return to Subject' ).when_present.click
 sleep 3
 b.link( :text => '101-999' ).when_present.click
 b.link( :text => 'View' ).when_present.click
-#b.link( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+#b.link( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 #b.goto( site + "/INFCONSForms/view/1701?siteID=1" )
 b.element(:css, "div.to_click").click
 
@@ -836,7 +835,7 @@ end
 # dismiss query manager (no test case needed at this point)
 
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 5
 
 # puts 'return to subject here'
@@ -854,7 +853,7 @@ salog( sep, "LOG" )
 tst = '8.1: click ?/response to open Query Manager'
 sleep 3
 
-#b.element( :xpath => '/html/body/div[2]/div[2]/div[4]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
+#b.element( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 b.link( :text => 'View' ).when_present.click
 
 b.goto( site + "/INFCONSForms/view/1?siteID=1" )
@@ -969,7 +968,7 @@ sleep 2
 # dismiss query manager
 
 #sleep 2
-#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[4]/div/button' ).when_present.click
+#b.element( :xpath => '//body[@id=\'form_page_layout\']/div[3]/div/button' ).when_present.click
 #sleep 5
 
 # puts 'return to subject here'
