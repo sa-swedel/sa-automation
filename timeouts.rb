@@ -90,29 +90,29 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '2.) 5 minute timeout dialog disappears'
+#tst = '2.) 5 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
-sleep 30
+#sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 
-test_count +=1
-if ( nagpres == FALSE )
-	salog( tst, "PASS" )
-else
-	salog( tst, "FAIL" )
-	fail_count +=1
-end
+#test_count +=1
+#if ( nagpres == FALSE )
+#	salog( tst, "PASS" )
+#else
+#	salog( tst, "FAIL" )
+#	fail_count +=1
+#end
 
 # 4 minute dialog
 
-tst = '3.) 4 minute timeout dialog appears'
+tst = '2.) 4 minute timeout dialog appears'
 
 # wait for dialog to appear
 
-sleep 30
+sleep 60
 
 nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '4 minutes' )
@@ -125,29 +125,29 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '4.) 4 minute timeout dialog disappears'
+# tst = '4.) 4 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
-sleep 30
+#sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 
-test_count +=1
-if ( nagpres == FALSE )
-	salog( tst, "PASS" )
-else
-	salog( tst, "FAIL" )
-	fail_count +=1
-end
+#test_count +=1
+#if ( nagpres == FALSE )
+#	salog( tst, "PASS" )
+#else
+#	salog( tst, "FAIL" )
+#	fail_count +=1
+#end
 
 # 3 minute dialog
 
-tst = '5.) 3 minute timeout dialog appears'
+tst = '3.) 3 minute timeout dialog appears'
 
 # wait for dialog to appear
 
-sleep 30
+sleep 60
 
 nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '3 minutes' )
@@ -160,29 +160,29 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '6.) 3 minute timeout dialog disappears'
+#tst = '6.) 3 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
-sleep 30
+#sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 
-test_count +=1
-if ( nagpres == FALSE )
-	salog( tst, "PASS" )
-else
-	salog( tst, "FAIL" )
-	fail_count +=1
-end
+#test_count +=1
+#if ( nagpres == FALSE )
+#	salog( tst, "PASS" )
+#else
+#	salog( tst, "FAIL" )
+#	fail_count +=1
+#end
 
 # 2 minute dialog
 
-tst = '7.) 2 minute timeout dialog appears'
+tst = '4.) 2 minute timeout dialog appears'
 
 # wait for dialog to appear
 
-sleep 30
+sleep 60
 
 nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '2 minutes' )
@@ -195,29 +195,29 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '8.) 2 minute timeout dialog disappears'
+#tst = '8.) 2 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
-sleep 30
+#sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 
-test_count +=1
-if ( nagpres == FALSE )
-	salog( tst, "PASS" )
-else
-	salog( tst, "FAIL" )
-	fail_count +=1
-end
+#test_count +=1
+#if ( nagpres == FALSE )
+#	salog( tst, "PASS" )
+#else
+#	salog( tst, "FAIL" )
+#	fail_count +=1
+#end
 
 # 1 minute dialog
 
-tst = '9.) 1 minute timeout dialog appears'
+tst = '5.) 1 minute timeout dialog appears'
 
 # wait for dialog to appear
 
-sleep 30
+sleep 60
 
 nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '1 minute' )
@@ -230,29 +230,29 @@ else
 	salog( tst, "PASS" )
 end
 
-tst = '10.) 1 minute timeout dialog disappears'
+#tst = '10.) 1 minute timeout dialog disappears'
 
 # wait for dialog to disappear
 
-sleep 30
+#sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 
-test_count +=1
-if ( nagpres == FALSE )
-	salog( tst, "PASS" )
-else
-	salog( tst, "FAIL" )
-	fail_count +=1
-end
+#test_count +=1
+#if ( nagpres == FALSE )
+#	salog( tst, "PASS" )
+#else
+#	salog( tst, "FAIL" )
+#	fail_count +=1
+#end
 
 # logged out
 
-tst = '11.) Logged out after timeout'
+tst = '6.) Logged out after timeout'
 
 # wait for logout
 
-sleep 60
+sleep 75
 
 lgout = b.text.include?( 'You are successfully signed out' )
 test_count +=1
