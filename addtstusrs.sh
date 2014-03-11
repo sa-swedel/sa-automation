@@ -1,5 +1,15 @@
 #!/bin/bash
 
+if [ -z "$1" ]; then
+	echo 'Usage: addtstusrs.sh dbtable #sites'
+	exit
+fi
+
+if [ -z "$2" ]; then
+	echo 'Usage: addtstusrs.sh dbtable #sites'
+	exit
+fi
+
 # arrays of stuff
 # user roles
 
@@ -47,8 +57,8 @@ declare -a unames=(scsite1 scsite2 scsite123 scsite23 invsite1 invsite2 invsite1
 declare -a colhdgs=(username password salt email first_name last_name email_verified active created modified last_password_change_date failed_login_attempts time_zone time_zone_offset password_reset_flag)
 
 usetbl=$1
-echo $usetbl
-sleep 30
+#echo $usetbl
+#sleep 30
 
 # first insert the usernames
 
