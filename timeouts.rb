@@ -252,7 +252,7 @@ tst = '6.) Logged out after timeout'
 
 # wait for logout
 
-sleep 90
+sleep 75
 
 lgout = b.text.include?( 'You are successfully signed out' )
 test_count +=1
