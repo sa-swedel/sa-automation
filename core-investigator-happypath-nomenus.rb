@@ -24,7 +24,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 login = 'invsite123'
 pw = '1qaz@WSX'
-site = 'http://54.212.41.237/'
+site = 'http://develop.trialintel.com'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -409,7 +409,7 @@ salog( sep, "LOG" )
 
 # verify subject id and form title are present
 
-#idex = b.text.include?( '108-999' )
+#idex = b.text.include?( '101-999' )
 #titex = b.text.include?( 'Investigator Signature' )
 
 #test_count +=1
@@ -705,7 +705,7 @@ ex = b.text.include?( 'Query Manager' )
 #b.link( :text => '108-Demo 108' ).when_present.click
 #b.link( :text => 'Return to Subject' ).when_present.click
 #sleep 3
-#b.link( :text => '108-999' ).when_present.click
+#b.link( :text => '101-999' ).when_present.click
 #b.link( :text => 'View' ).when_present.click
 #b.link( :xpath => '/html/body/div[2]/div[2]/div[3]/div/div/div/div[2]/div/div/table[2]/tbody/tr[2]/td[5]/a' ).when_present.click
 #b.goto( site + "/INFCONSForms/view/1701?siteID=1" )
