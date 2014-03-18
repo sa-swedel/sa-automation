@@ -4,7 +4,7 @@
 # Test page timeouts
 #
 # Scott Wedel
-# 10 Mar 2014
+# 10 March 2014
 #
 ####################################################################################
 
@@ -19,7 +19,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 login = 'admin'
 pw = '123456'
-site = 'http://develop.trialintel.com'
+site = 'http://v031.rc1.trialintel.com'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -31,8 +31,8 @@ today = timedate.inspect.to_s
 
 # start up browser
 
-headless = Headless.new
-headless.start
+#headless = Headless.new
+#headless.start
 
 # uncomment the line corresponding to the browser against which you want to test (no arg = firefox)
 
@@ -79,7 +79,7 @@ sleep 60
 
 tst = '1.) 5 minute timeout dialog appears'
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+nagpres = b.element( :class => 'blurMessage' ).exists?
 txtpres = b.text.include?( '5 minutes' )
 
 test_count +=1
@@ -96,7 +96,7 @@ end
 
 #sleep 60
 
-#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
 
 #test_count +=1
 #if ( nagpres == FALSE )
@@ -114,7 +114,7 @@ tst = '2.) 4 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+nagpres = b.element( :class => 'blurMessage' ).exists?
 txtpres = b.text.include?( '4 minutes' )
 
 test_count +=1
@@ -131,7 +131,7 @@ end
 
 #sleep 60
 
-#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
 
 #test_count +=1
 #if ( nagpres == FALSE )
@@ -149,7 +149,7 @@ tst = '3.) 3 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+nagpres = b.element( :class => 'blurMessage' ).exists?
 txtpres = b.text.include?( '3 minutes' )
 
 test_count +=1
@@ -166,7 +166,7 @@ end
 
 #sleep 60
 
-#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
 
 #test_count +=1
 #if ( nagpres == FALSE )
@@ -184,7 +184,7 @@ tst = '4.) 2 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+nagpres = b.element( :class => 'blurMessage' ).exists?
 txtpres = b.text.include?( '2 minutes' )
 
 test_count +=1
@@ -201,7 +201,7 @@ end
 
 #sleep 60
 
-#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
 
 #test_count +=1
 #if ( nagpres == FALSE )
@@ -219,7 +219,7 @@ tst = '5.) 1 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+nagpres = b.element( :class => 'blurMessage' ).exists?
 txtpres = b.text.include?( '1 minute' )
 
 test_count +=1
@@ -236,7 +236,7 @@ end
 
 #sleep 60
 
-#nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
 
 #test_count +=1
 #if ( nagpres == FALSE )
@@ -270,7 +270,7 @@ puts countstr
 
 
 b.close		
-headless.destroy
+#headless.destroy
 
 
 
