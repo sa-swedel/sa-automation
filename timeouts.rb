@@ -31,8 +31,8 @@ today = timedate.inspect.to_s
 
 # start up browser
 
-#headless = Headless.new
-#headless.start
+headless = Headless.new
+headless.start
 
 # uncomment the line corresponding to the browser against which you want to test (no arg = firefox)
 
@@ -270,7 +270,7 @@ puts countstr
 
 
 b.close		
-#headless.destroy
+headless.destroy
 
 
 
