@@ -1,10 +1,10 @@
 ####################################################################################
 #
-# DM-HPSCR.rb
-# Test "happy path" conditions as a Data Manager
+# core-dm-happypath-nomenus.rb
+# Test "happy path" conditions as a Data Manager - no menus, 2.x UI
 #
 # Scott Wedel
-# 25 November 2013
+# 14 March 2014
 #
 # Tests from the 'Data Manager Script' sheet in the QC Test Modules V1.0 spreadsheet
 #
@@ -1028,6 +1028,12 @@ salog( sep, "LOG" )
 
 b.element( :link => 'Sign Out' ).when_present.click
 sleep 2
+
+# DEBUG
+
+dbgtxt =  b.text
+puts dbgtxt
+
 
 test_count +=1
 if b.text.include? 'You are successfully signed out'
