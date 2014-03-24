@@ -257,7 +257,7 @@ tst = '6.) Logged out after timeout'
 
 # wait for logout
 
-sleep 75
+sleep 120
 
 endtxt = b.text
 puts endtxt
