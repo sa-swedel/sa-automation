@@ -19,7 +19,7 @@ File.delete( "error_log.txt" ) if File.exist?( "error_log.txt" )
 
 login = 'admin'
 pw = '123456'
-site = 'http://v031.rc1.trialintel.com'
+site = 'http://v031.rc2.trialintel.com'
 test_count = 0
 fail_count = 0
 loop = 0
@@ -79,7 +79,8 @@ sleep 60
 
 tst = '1.) 5 minute timeout dialog appears'
 
-nagpres = b.element( :class => 'blurMessage' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
+nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '5 minutes' )
 
 test_count +=1
@@ -114,7 +115,8 @@ tst = '2.) 4 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'blurMessage' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
+nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '4 minutes' )
 
 test_count +=1
@@ -149,7 +151,8 @@ tst = '3.) 3 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'blurMessage' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
+nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '3 minutes' )
 
 test_count +=1
@@ -184,7 +187,8 @@ tst = '4.) 2 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'blurMessage' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
+nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '2 minutes' )
 
 test_count +=1
@@ -219,7 +223,8 @@ tst = '5.) 1 minute timeout dialog appears'
 
 sleep 60
 
-nagpres = b.element( :class => 'blurMessage' ).exists?
+#nagpres = b.element( :class => 'blurMessage' ).exists?
+nagpres = b.element( :class => 'SessionAlerts-warning' ).exists?
 txtpres = b.text.include?( '1 minute' )
 
 test_count +=1
@@ -253,6 +258,9 @@ tst = '6.) Logged out after timeout'
 # wait for logout
 
 sleep 75
+
+endtxt = b.text
+puts endtxt
 
 lgout = b.text.include?( 'You are successfully signed out' )
 test_count +=1
