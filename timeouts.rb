@@ -31,8 +31,8 @@ today = timedate.inspect.to_s
 
 # start up browser
 
-headless = Headless.new
-headless.start
+#headless = Headless.new
+#headless.start
 
 # uncomment the line corresponding to the browser against which you want to test (no arg = firefox)
 
@@ -68,8 +68,8 @@ b.element( :link => 'Subjects' ).when_present.click
 
 # 3.) wait for ( timeout - 5min )
 
-puts 'Waiting 60 sec ... why on earth are you watching this?'
-sleep 60
+puts 'Waiting 13 min ... why on earth are you watching this?'
+sleep 780
 puts '60 more sec... if you have nothing better to do ...'
 sleep 60
 puts '60 more sec... my advice is to start drinking heavily.'
@@ -278,7 +278,7 @@ puts countstr
 
 
 b.close		
-headless.destroy
+#headless.destroy
 
 
 
